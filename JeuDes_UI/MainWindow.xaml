@@ -1,0 +1,45 @@
+﻿<Window x:Class="JeuDes_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JeuDes_UI"
+        mc:Ignorable="d"
+        Title="3A4 -- Jeu de dés" Width="500" SizeToContent="Height">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="20">Jeu de dés</TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Name="imgDe1" Source="6.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+            <Image Name="imgDe2" Source="6.png" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"/>
+            <Image Name="imgDe3" Source="6.png" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
+            <Image Name="imgDe4" Source="6.png" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"/>
+            <Image Name="imgDe5" Source="6.png" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center"/>
+            <CheckBox Name="chkDe1Libre" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
+            <CheckBox Name="chkDe2Libre" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"/>
+            <CheckBox Name="chkDe3Libre" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"/>
+            <CheckBox Name="chkDe4Libre" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center"/>
+            <CheckBox Name="chkDe5Libre" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center"/>
+            <Button Name="btnLancer" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="3">Lancer les dés</Button>
+            <TextBlock Text="Tour joué: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right"/>
+            <TextBlock Text="Score courant: " Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right"/>
+            <TextBlock Text="Meilleur score: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right"/>
+            <TextBlock Name="tbNoTour" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center">0 de 2</TextBlock>
+            <TextBlock Name="tbScoreCourant" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center">0</TextBlock>
+            <TextBlock Name="tbMeilleurScore" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center">0</TextBlock>
+        </Grid>
+    </StackPanel>
+</Window>
